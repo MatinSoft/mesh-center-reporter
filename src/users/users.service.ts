@@ -15,8 +15,13 @@ export class UsersService {
     }
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} user`;
+  findOne(id: string) {
+    try {
+      const response = runCommand(`userinfo --id ${id}`)
+      return response
+    } catch (error) {
+      console.log(error)
+    }
   }
 
 }
