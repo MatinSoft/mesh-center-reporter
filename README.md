@@ -71,3 +71,8 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## How to Run
+  1. Run MeshCenterServer
+  2. make userName and Password and put them in .env file
+  3. set MeshCenterRoute in .env
